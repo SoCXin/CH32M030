@@ -1,0 +1,50 @@
+{
+    "type":"SoC",
+    "name":"CH32M030",
+    "title": "WCH SoC CH32M030",
+    "description":"WCH RISC-V3B USBHS+PD SoC",
+    "version":"1.1.0",
+    "Core": {
+        "num": 1,
+        "type":"RISC-V3B",
+        "Freq": 40,
+        "DMIPS": 100,
+        "CoreMark": 160
+    },
+    "manufacturer": {
+        "vendor":"WCH",
+        "homepage": "http://www.wch.cn/products/CH32M030.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/CH32M030.git"
+    },
+    "series":["CH32M030"],
+    "package":["QSOP28","QFN32","QFN48","LQFP48","LQFP48X7"],
+    "peripheral": ["TIM","ADC","USB","UART","SPI","LDO","PWM"],
+    "price":[14,18],
+    "PWR": {
+        "VDD": [2800,5000],
+        "Ivdd": 3.5,
+        "LDO": [5000,3300],
+        "rate": 1024
+    },
+    "EMC": {
+        "EFT": 2000,
+        "ESD": 4000
+    },
+    "upload": {
+        "ISP": true,
+        "IAP": true,
+        "SWD": true,
+        "speed": 115200
+    },
+    "keywords": [
+        "RISC-V",
+        "RISC-V3B",
+        "WCH",
+        "CH32M030",
+        "USBHS","NFC","BLE","I2C","RTC","SPI",
+        "3.6V","1.8V"
+    ]
+}
